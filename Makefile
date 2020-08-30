@@ -175,7 +175,7 @@ webwork-server-tex:
 # LaTeX and PDF versions,
 # see prerequisite just above about merge files.
 # xsltproc may be passed --stringparam latex.fillin.style box for box answer blanks
-pdf: acs-merge
+pdf:
 	install -d $(PDFOUT)
 	install -d $(PDFOUT)/images
 	-rm $(PDFOUT)/*.*
@@ -186,7 +186,7 @@ pdf: acs-merge
 	install -b xsl/acs-common.xsl $(MBUSR)
 	cp -a $(IMAGESSRC) $(PDFOUT)
 	cd $(PDFOUT); \
-	xsltproc -o acs.tex -xinclude $(MBUSR)/acs-latex.xsl $(WWOUT)/acs-merge.ptx; \
+	xsltproc -o acs.tex -xinclude $(MBUSR)/acs-latex.xsl $(MAINFILE); \
 	xelatex acs; \
 	xelatex acs; \
 	xelatex acs
