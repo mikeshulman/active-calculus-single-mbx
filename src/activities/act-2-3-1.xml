@@ -38,14 +38,14 @@
         <li permid="APL">
           <p permid="vaz">
             Determine the slope of the tangent line to the curve
-            <m>y = f(x)</m> at the point where <m>a = 1</m> if <m>f</m> is given by the rule <m>f(x) = e^x \sin(x)</m>.
+            <m>y = f(x)</m> at the point where <m>x = 1</m> if <m>f</m> is given by the rule <m>f(x) = e^x \sin(x)</m>.
           </p>
         </li>
 
         <li permid="gWU">
           <p permid="bhI">
             Find the tangent line approximation <m>L(x)</m> to the function
-            <m>y = g(x)</m> at the point where <m>a = -1</m> if <m>g</m> is given by the rule <m>g(x) = (x^2 + x) 2^x</m>.
+            <m>y = g(x)</m> at the point where <m>x = -1</m> if <m>g</m> is given by the rule <m>g(x) = (x^2 + x) 2^x</m>.
           </p>
         </li>
       </ol>
