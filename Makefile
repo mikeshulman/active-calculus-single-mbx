@@ -99,7 +99,8 @@ RQOUT      = $(OUTPUT)/reading-questions
 # For all but trivial testing or examples, please look into setting
 # up your own WeBWorK server, or consult Alex Jordan about the use
 # of PCC's server in a nontrivial capacity.    <alex.jordan@pcc.edu>
-SERVER = https://webwork-ptx.aimath.org
+SERVER = https://webwork-math.sandiego.edu
+# SERVER = https://webwork-ptx.aimath.org
 
 #  Write out each WW problem as a standalone problem in PGML ready 
 #  for use on a WW server.  "def" files and "header" files are 
