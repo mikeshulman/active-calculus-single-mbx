@@ -13,3 +13,4 @@ src/exercises/schemas.xml
 *.swp
 
 Makefile.paths
+html/
