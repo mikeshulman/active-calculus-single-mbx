@@ -88,6 +88,7 @@
       We often use the notation <m>f^{-1}</m>
       (read <q><m>f</m>-inverse</q>)
       to denote the inverse of <m>f</m>.
+      (Note that this does <em>not</em> refer to a reciprocal: <m>f^{-1}(x)</m> is quite different from <m>\frac{1}{f(x)}</m>.)
       The inverse function undoes the work of <m>f</m>.
       Indeed, if <m>y = f(x)</m>, then
       <me permid="epN">
@@ -97,6 +98,11 @@
       <m>x = f^{-1}(y)</m> say the same thing.
       The only difference between the two equations is one of perspective <mdash /> one is solved for <m>x</m>,
       while the other is solved for <m>y</m>.
+      In addition, we have the defining equations of an inverse function, which say that
+      <me>
+        f^{-1}(f(x)) = x \ \ \text{and} \ \ f(f^{-1}(y)) = y
+      </me>
+      whenever <m>x</m> is in the domain of <m>f</m> and <m>y</m> is in the codomain of <m>f</m>.
     </p>
 
     <p permid="dFT">
@@ -180,14 +186,13 @@
     <title>The derivative of the natural logarithm function</title>
     <p permid="CiD">
       In what follows,
-      we find a formula for the derivative of <m>g(x) = \ln(x)</m>.
+      we find a formula for the derivative of <m>\ln(x)</m>.
       To do so, we take advantage of the fact that we know the derivative of the natural exponential function,
-      the inverse of <m>g</m>.
-      In particular, we know that writing
-      <m>g(x) = \ln(x)</m> is equivalent to writing <m>e^{g(x)} = x</m>.
+      the inverse of <m>\ln</m>.
+      In particular, we know that <m>e^{\ln(x)} = x</m>.
       Now we differentiate both sides of this equation and observe that
       <me permid="KwW">
-        \frac{d}{dx}\left[e^{g(x)}\right] = \frac{d}{dx}[x]
+        \frac{d}{dx}\left[e^{\ln(x)}\right] = \frac{d}{dx}[x]
       </me>.
     </p>
 
@@ -195,22 +200,21 @@
       The righthand side is simply <m>1</m>;
       by applying the chain rule to the left side, we find that
       <me permid="qEf">
-        e^{g(x)} g'(x) = 1
+        e^{\ln(x)} \ln'(x) = 1
       </me>.
     </p>
 
     <p permid="OwV">
-      Next we solve for <m>g'(x)</m>, to get
+      Next we solve for <m>\ln'(x)</m>, to get
       <me permid="WLo">
-        g'(x) = \frac{1}{e^{g(x)}}
+        \ln'(x) = \frac{1}{e^{\ln(x)}}
       </me>.
     </p>
 
     <p permid="uEe">
-      Finally, we recall that <m>g(x) = \ln(x)</m>, so
-      <m>e^{g(x)} = e^{\ln(x)} = x</m>, and thus
+      Finally, we recall that <m>e^{\ln(x)} = x</m>, and thus
       <me permid="CSx">
-        g'(x) = \frac{1}{x}
+        \ln'(x) = \frac{1}{x}
       </me>.
     </p>
 
@@ -305,7 +309,7 @@
       consider the sine function on the domain <m>[-\frac{\pi}{2}, \frac{\pi}{2}]</m>.
       Because no output of the sine function is repeated on this interval,
       the function is one-to-one and thus has an inverse.
-      Thus, the function <m>f(x) = \sin(x)</m> with
+      Thus, the function <m>f(x) = \sin(x)</m> with domain
       <m>[-\frac{\pi}{2}, \frac{\pi}{2}]</m> and codomain <m>[-1,1]</m>
       has an inverse function <m>f^{-1}</m> such that
       <me permid="iZG">
@@ -322,11 +326,15 @@
         <me permid="PgP">
           y = \sin(x) \ \ \text{and}  \ \ x = \arcsin(y)
         </me>
-        say the same thing.
+        say the same thing, and that we have
+        <me>
+          \arcsin(\sin(x)) = x \ \ \text{and} \ \ \sin(\arcsin(y)) = y
+        </me>
+        whenever <m>y</m> is in the domain of <m>\arcsin</m> (that is, <m>-1 \le y \le 1</m>) and <m>x</m> is in the codomain of <m>\arcsin</m> (that is, <m>-\frac{\pi}{2} \le x \le \frac{\pi}{2}</m>).
         <q>The arcsine of <m>y</m></q>
-        means <q>the angle whose sine is <m>y</m>.</q> For example,
+        means <q>the angle whose sine is <m>y</m></q> (which lies in <m>[-\frac{\pi}{2},\frac{\pi}{2}]</m>). For example,
         <m>\arcsin(\frac{1}{2}) = \frac{\pi}{6}</m> means that
-        <m>\frac{\pi}{6}</m> is the angle whose sine is <m>\frac{1}{2}</m>,
+        <m>\frac{\pi}{6}</m> is the angle in <m>[-\frac{\pi}{2},\frac{\pi}{2}]</m> whose sine is <m>\frac{1}{2}</m>,
         which is equivalent to writing <m>\sin(\frac{\pi}{6}) = \frac{1}{2}</m>.
       </p>
 
@@ -337,40 +345,36 @@
     </sidebyside>
 
     <p permid="DXQ">
-      Next, we determine the derivative of the arcsine function.
-      Letting <m>h(x) = \arcsin(x)</m>,
-      our goal is to find <m>h'(x)</m>.
-      Since <m>h(x)</m> is the angle whose sine is <m>x</m>,
-      it is equivalent to write
+      Next, we determine the derivative of the arcsine function, <m>\arcsin'(x)</m>.
+      Since <m>\arcsin(x)</m> is the angle whose sine is <m>x</m>, we have
       <me permid="vnY">
-        \sin(h(x)) = x
-      </me>.
+        \sin(\arcsin(x)) = x.
+      </me>
+      (Note that we also have <m>\arcsin(\sin(x)) = x</m>.  What would go wrong if we tried to use that equation instead?)
     </p>
 
     <p permid="keZ">
       Differentiating both sides of the previous equation, we have
       <me permid="bvh">
-        \frac{d}{dx}[\sin(h(x))] = \frac{d}{dx}[x]
+        \frac{d}{dx}[\sin(\arcsin(x))] = \frac{d}{dx}[x]
       </me>.
       The righthand side is simply <m>1</m>,
       and by applying the chain rule applied to the left side,
       <me permid="HCq">
-        \cos(h(x)) h'(x) = 1
+        \cos(\arcsin(x)) \arcsin'(x) = 1
       </me>.
     </p>
 
     <p permid="Qmi">
-      Solving for <m>h'(x)</m>, it follows that
+      Solving for <m>\arcsin'(x)</m>, it follows that
       <me permid="nJz">
-        h'(x) = \frac{1}{\cos(h(x))}
+        \arcsin'(x) = \frac{1}{\cos(\arcsin(x))}
       </me>.
     </p>
 
     <p permid="wtr">
-      Finally, we recall that <m>h(x) = \arcsin(x)</m>,
-      so the denominator of <m>h'(x)</m> is the function <m>\cos(\arcsin(x))</m>,
-      or in other words,
-      <q>the cosine of the angle whose sine is <m>x</m>.</q>
+      Here the denominator <m>\cos(\arcsin(x))</m> is
+      <q>the cosine of the angle whose sine is <m>x</m></q>.
       A bit of right triangle trigonometry allows us to simplify this expression considerably.
     </p>
 
@@ -400,9 +404,9 @@
 
     <p permid="IHJ">
       Substituting this expression into our formula,
-      <m>h'(x) = \frac{1}{\cos(\arcsin(x))}</m>, we have now shown that
+      <m>\arcsin'(x) = \frac{1}{\cos(\arcsin(x))}</m>, we have now shown that
       <me permid="TQI">
-        h'(x) = \frac{1}{\sqrt{1-x^2}}
+        \arcsin'(x) = \frac{1}{\sqrt{1-x^2}}
       </me>.
     </p>
 

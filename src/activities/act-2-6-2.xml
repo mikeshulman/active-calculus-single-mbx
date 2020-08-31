@@ -15,34 +15,32 @@
 <activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-2-6-2" permid="uyj">
   <statement>
     <p permid="dzY">
-      The following prompts in this activity will lead you to develop the derivative of the inverse tangent function.
+      The following prompts in this activity will lead you to develop the derivative of the inverse tangent function <m>\arctan(x)</m>.
 
       <ol label="a." permid="WqY">
         <li permid="Cyh">
           <p permid="tOp">
-            Let <m>r(x) = \arctan(x)</m>.
-            Use the relationship between the arctangent and tangent functions to rewrite this equation using only the tangent function.
+            Write the two equations expressing the fact that <m>\arctan</m> is the inverse function of <m>\tan</m>.
           </p>
         </li>
 
         <li permid="iFq">
           <p permid="ZVy">
-            Differentiate both sides of the equation you found in (a).
-            Solve the resulting equation for <m>r'(x)</m>,
-            writing <m>r'(x)</m> as simply as possible in terms of a trigonometric function evaluated at <m>r(x)</m>.
+            Differentiate both sides of the equations you found in (a).
+            Since we don't yet know the derivative of <m>\arctan</m>, wherever its derivative appears simply leave it as <m>\arctan'</m>.
           </p>
         </li>
 
         <li permid="OMz">
           <p permid="GcH">
-            Recall that <m>r(x) = \arctan(x)</m>.
-            Update your expression for <m>r'(x)</m> so that it only involves trigonometric functions and the independent variable <m>x</m>.
+            One of the two derivative equations you found in (b) (but not the other) can be solved for <m>\arctan'(x)</m>.
+            Decide which of them can be so solved, and do so.
           </p>
         </li>
 
         <li permid="uTI">
           <p permid="mjQ">
-            Introduce a right triangle with angle <m>\theta</m> so that <m>\theta = \arctan(x)</m>.
+            Draw a right triangle with angle <m>\theta</m> so that <m>\theta = \arctan(x)</m>.
             What are the three sides of the triangle?
           </p>
         </li>
@@ -56,7 +54,7 @@
 
         <li permid="Hia">
           <p permid="yyi">
-            Use the results of your work above to find an expression involving only <m>1</m> and <m>x</m> for <m>r'(x)</m>.
+            Use the results of your work above to find an expression for <m>\arctan'(x)</m> involving only <m>1</m> and <m>x</m>.
           </p>
         </li>
       </ol>
@@ -67,20 +65,21 @@
       <ol label="a." permid="qjP">
         <li permid="npj">
           <p permid="eFr">
-            Recall that for any function and its inverse,
-            writing <m>y = f^{-1}(x)</m> is equivalent to writing <m>f(y) = x</m>.
+            Recall that for any function <m>f</m> and its inverse <m>f^{-1}</m>, we have
+            <m>f^{-1}(f(x)) = x</m> and <m>f(f^{-1}(x)) = x</m>.
           </p>
         </li>
 
         <li permid="Tws">
           <p permid="KMA">
-            Apply the chain rule to differentiate <m>\tan(r(x))</m>.
+            Apply the chain rule to differentiate <m>\tan(\arctan(x))</m> and <m>\arctan(\tan(x))</m>.
           </p>
         </li>
 
         <li permid="zDB">
           <p permid="qTJ">
-            This question is only asking you to substitute the expression for <m>r(x)</m> into what you found in (b).
+            Note that we are trying to solve for <m>\arctan'(x)</m>, not <m>\arctan'(\tan(x))</m>, so an equation only involving the latter is no good.
+            Now treat <m>\arctan'(x)</m> as if it were a variable, say <m>y</m>, and solve for it.
           </p>
         </li>
 
@@ -110,19 +109,19 @@
       <ol label="a." permid="KcG">
         <li permid="Ygl">
           <p permid="Pwt">
-            <m>\tan(r(x)) = x</m>.
+            <m>\tan(\arctan(x)) = x</m> and <m>\arctan(\tan(x)) = x</m>.
           </p>
         </li>
 
         <li permid="Enu">
           <p permid="vDC">
-            <m> r'(x) = \cos^2(r(x))</m>.
+            <m>\sec^2(\arctan(x)) \arctan'(x) = 1</m> and <m>\arctan'(\tan(x)) \sec^2(x) = 1</m>.
           </p>
         </li>
 
         <li permid="kuD">
           <p permid="bKL">
-            <m>r'(x) = \cos^2(\arctan(x))</m>.
+            <m>\arctan'(x) = \cos^2(\arctan(x))</m>.
           </p>
         </li>
 
@@ -145,7 +144,7 @@
 
         <li permid="cQe">
           <p permid="Ugm">
-            <m> r'(x) = \frac{1}{1+x^2}</m>.
+            <m> \arctan'(x) = \frac{1}{1+x^2}</m>.
           </p>
         </li>
       </ol>
@@ -156,30 +155,35 @@
       <ol label="a." permid="dVx">
         <li permid="IXn">
           <p permid="Anv">
-            Since <m>r(x) = \arctan(x)</m>,
-            it is equivalent to write <m>\tan(r(x)) = x</m>.
+            For any function <m>f</m> and its inverse <m>f^{-1}</m>, we have
+            <m>f^{-1}(f(x)) = x</m> and <m>f(f^{-1}(x)) = x</m>, so in this case we get
+            <m>\tan(\arctan(x)) = x</m> and <m>\arctan(\tan(y)) = y</m>.
           </p>
         </li>
 
         <li permid="pew">
           <p permid="guE">
-            Differentiating,
-            we have <m>\frac{d}{dx}[\tan(r(x))] = \frac{d}{dx}[x]</m>, so
+            Differentiating <m>\tan(\arctan(x)) = x</m>,
+            we have <m>\frac{d}{dx}[\tan(\arctan(x))] = \frac{d}{dx}[x]</m>, so
             <me permid="JHh">
-              \sec^2(r(x)) r'(x) = 1
-            </me>,
-            and thus
-            <me permid="pOq">
-              r'(x) = \frac{1}{\sec^2(r(x))} = \cos^2(r(x))
-            </me>,
-            since <m>\frac{1}{\sec(\alpha)} = \cos(\alpha)</m>.
+              \sec^2(\arctan(x)) \arctan'(x) = 1.
+            </me>
+            Differentiating <m>\arctan(\tan(x)) = x</m>,
+            we have <m>\frac{d}{dx}[\arctan(\tan(x))] = \frac{d}{dx}[x]</m>, so
+            <me permid="JHh">
+              \arctan'(\tan(x)) \sec^2(x) = 1.
+            </me>
           </p>
         </li>
 
         <li permid="VlF">
           <p permid="MBN">
-            Since <m>r(x) = \arctan(x)</m>,
-            we now have that <m>r'(x) = \cos^2(\arctan(x))</m>.
+            The equation <m>\arctan'(\tan(x)) \sec^2(x) = 1</m> can't be solved for <m>\arctan(x)</m> since it doesn't even contain <m>\arctan(x)</m>.
+            But for the equation <m>\sec^2(\arctan(x)) \arctan'(x) = 1</m>, we have
+            <me permid="pOq">
+              \arctan'(x) = \frac{1}{\sec^2(\arctan(x))} = \cos^2(\arctan(x))
+            </me>,
+            since <m>\frac{1}{\sec(\alpha)} = \cos(\alpha)</m>.
           </p>
         </li>
 
@@ -211,11 +215,11 @@
         <li permid="NHg">
           <p permid="EXo">
             Finally,
-            we recall that we know <m>r'(x) = \cos^2(\arctan(x)) = \left( \cos(\arctan(x)) \right)^2</m>.
+            we recall that we know <m>\arctan'(x) = \cos^2(\arctan(x)) = \left( \cos(\arctan(x)) \right)^2</m>.
             Having established that <m>\cos(\arctan(x)) = \frac{1}{\sqrt{1+x^2}}</m>,
             we now have that
             <me permid="CcI">
-              r'(x) = \frac{1}{1+x^2}
+              \arctan'(x) = \frac{1}{1+x^2}
             </me>.
           </p>
         </li>
