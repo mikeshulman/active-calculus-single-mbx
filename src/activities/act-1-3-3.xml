@@ -123,7 +123,13 @@
 
         <li permid="wOZ">
           <me permid="qZN">
-            P'(2) =  \lim_{h \to 0} \frac{P(2+h)-P(2)}{h} \approx 7458.5
+            P'(2) =  \lim_{h \to 0} \frac{P(2+h)-P(2)}{h}
+          </me>
+        </li>
+
+        <li>
+          <me>
+            P'(2) \approx 7458.5
           </me>
           which is measured in people per decade.
         </li>
