@@ -56,7 +56,9 @@
 
         <li permid="DLR">
           <p permid="vbZ">
-            How can you use the average value you found in (d) to compute the total distance traveled by the moving object over <m>[0,4]</m>?
+            Recall from chapter 1 the notion of <em>average velocity</em> of a moving object over an interval, <m>AV_{[a,b]} = \frac{s(b)-s(a)}{b-a}</m>, where <m>s(t)</m> is the displacement function.
+            For the moving object in this problem, find the average velocity <m>AV_{[0,4]}</m>.
+            How is it related to your answer to part (d)?
           </p>
         </li>
       </ol>
@@ -98,7 +100,7 @@
 
         <li permid="oCT">
           <p permid="fTb">
-            Distance equals average rate times <m>\ldots</m>.
+            <m>s(4)-s(0)</m> is the total displacement over the interval.
           </p>
         </li>
       </ol>
@@ -128,7 +130,7 @@
 
         <li permid="NfD">
           <p permid="EvL">
-            <m> v_{\text{AVG} }[0,4] = \frac{\pi}{2}</m>, meters per minute,.
+            <m> v_{\text{AVG} }[0,4] = \frac{\pi}{2}</m> meters per minute.
           </p>
         </li>
 
@@ -146,7 +148,8 @@
 
         <li permid="ZtV">
           <p permid="QKd">
-            <m> D = 2\pi</m>.
+            <m> AV_{[0,4]} = \frac{\pi}{2}</m> meters per minute.
+            It's the same as part (d): average velocity is the average value of the velocity function.
           </p>
         </li>
       </ol>
@@ -208,18 +211,12 @@
 
         <li permid="KkX">
           <p permid="hIo">
-            Knowing that average velocity is <m>\frac{\pi}{2}</m>,
-            it follows from the fact that distance traveled equals average rate times time
-            (provided velocity is always nonnegative),
-            we have
-            <me permid="Szq">
-              D = \frac{\pi}{2} \cdot 4 = 2\pi
-            </me>.
-            We see from (c) or (f) that we are simply considering the situation from two different perspectives:
-            if we know the distance traveled,
-            we can find average velocity,
-            or if we know average velocity,
-            we can find distance traveled.
+            Since <m>s(4)-s(0)</m> is the total displacement over the interval <m>[0,4]</m>, which is also equal to <m>\int_{0}^{4} v(t)\,dt</m>, we have
+            <me>
+              AV_{[0,4]} = \frac{s(4)-s(0)}{4-0} = \frac{1}{4} \cdot 2\pi = \frac{\pi}{2}.
+            </me>
+            This is the same as the answer to part (d).
+            Thus, our new meaning of <q>average value of a function</q>, when applied to a velocity function, coincides with the old meaning of <q>average velocity</q>.
           </p>
         </li>
       </ol>
