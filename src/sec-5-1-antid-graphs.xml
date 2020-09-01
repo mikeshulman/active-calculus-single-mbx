@@ -125,7 +125,8 @@
       In the final question of <xref ref="act-5-1-1">Activity</xref>,
       we encountered a very important idea:
       a function <m>f</m> has more than one antiderivative.
-      Each antiderivative of <m>f</m> is determined uniquely by its value at a single point.
+      Moreover, at least on an interval where <m>f</m> is continuous,
+      each antiderivative of <m>f</m> is determined uniquely by its value at a single point.
       For example,
       suppose that <m>f</m> is the function given at left in <xref ref="F-5-1-Ex1">Figure</xref>,
       and suppose further that <m>F</m> is an antiderivative of <m>f</m> that satisfies <m>F(0) = 1</m>.
@@ -177,8 +178,8 @@
 
     <assemblage permid="qTa">
       <p permid="zht">
-        If <m>G</m> and <m>H</m> are both antiderivatives of a function <m>f</m>,
-        then the function <m>G - H</m> must be constant.
+        If <m>G</m> and <m>H</m> are both antiderivatives of a function <m>f</m> on some interval,
+        then the function <m>G - H</m> must be constant on that interval.
       </p>
     </assemblage>
 
@@ -190,32 +191,32 @@
       <me permid="NkY">
         \frac{d}{dx}[ G(x) - H(x) ] = G'(x) - H'(x) = f(x) - f(x) = 0
       </me>.
-      Since the only way a function can have derivative zero is by being a constant function,
+      Since the only way a function defined on an interval can have derivative zero is by being a constant function,
       it follows that the function <m>G - H</m> must be constant.
     </p>
 
     <p permid="LvL">
-      We now see that if a function has at least one antiderivative,
+      Conversely, as we noted in <xref ref="sec-4-4-FTC">Section</xref>, if a function has at least one antiderivative,
       it must have infinitely many:
       we can add any constant of our choice to the antiderivative and get another antiderivative.
       For this reason, we sometimes refer to the
       <em>general antiderivative</em>
           <idx><h>antiderivative</h><h>general</h></idx>
       of a function <m>f</m>.
+      For example, if <m>f(x) = x^2</m>,
+      its general antiderivative is <m>F(x) = \frac{1}{3}x^3 + C</m>,
+      where as in <xref ref="sec-4-4-FTC">Section</xref> we include the <q><m>+C</m></q>
+      to indicate that <m>F</m> includes <em>all</em>
+      of the possible antiderivatives of <m>f</m>.
     </p>
 
     <p permid="rCU">
-      To identify a particular antiderivative of <m>f</m>,
+      To identify a particular antiderivative of <m>f</m> (on some interval),
       we must know a single value of the antiderivative <m>F</m>
       (this value is often called an
       <em>initial condition</em>).
           <idx><h>initial condition</h></idx>
-      For example, if <m>f(x) = x^2</m>,
-      its general antiderivative is <m>F(x) = \frac{1}{3}x^3 + C</m>,
-      where we include the <q><m>+C</m></q>
-      to indicate that <m>F</m> includes <em>all</em>
-      of the possible antiderivatives of <m>f</m>.
-      If we know that <m>F(2) = 3</m>,
+      For instance, with <m>f(x) = x^2</m> and <m>F(x) = \frac{1}{3}x^3 + C</m> as above, if we know in addition that <m>F(2) = 3</m>,
       we substitute 2 for <m>x</m> in <m>F(x) = \frac{1}{3}x^3 + C</m>,
       and find that
       <me permid="tsh">
@@ -223,6 +224,14 @@
       </me>,
       or <m>C = 3 - \frac{8}{3} = \frac{1}{3}</m>.
       Therefore, the particular antiderivative in this case is <m>F(x) = \frac{1}{3}x^3 + \frac{1}{3}</m>.
+    </p>
+
+    <p>
+      If the domain of a function consists of more than one interval,
+      then to identify a particular antiderivative we need an initial condition on each interval.
+      However, if there is only one point missing from the domain in between two intervals
+      (e.g. if the function is defined for all <m>x\neq 0</m>),
+      then we can often <q>bridge the gap</q> by assuming the antiderivative is continuous.
     </p>
 
     <xi:include href="./activities/act-5-1-2.xml" />

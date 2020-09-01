@@ -94,6 +94,15 @@
               evaluate <m>\int \csc(x) \, dx</m>.
             </p>
           </li>
+
+          <li>
+            <p>
+              Recall that the <m>+C</m> in the value of an indefinite integral indicates an arbitrary constant
+              that could be different on each interval in the domain of the function.
+              How many arbitrary constants are there in <m>\int \tan(x)\, dx</m>?
+              Can you use the FTC to compute <m>\int_{0}^{\pi} \tan(x)\, dx</m>?
+            </p>
+          </li>
         </ol>
       </p>
     </statement>
@@ -136,6 +145,13 @@
             <p permid="pZl">
               <m>
               \int \csc(x) \, dx = -\ln\left(|\csc(x) + \cot(x)|\right) + C</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Infinitely many.
+              And no, since <m>\tan(x)</m> is not continuous on <m>[0,\pi]</m>.
             </p>
           </li>
         </ol>
@@ -234,6 +250,21 @@
               <me permid="rsZ">
                 \int \csc(x) \, dx = -\ln\left(|\csc(x) + \cot(x)|\right) + C
               </me>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Since the domain of <m>\tan(x)</m> consists of infinitely many intervals,
+              such as <m>(-\frac{pi}{2},\frac{\pi}{2})</m>, <m>(\frac{pi}{2},\frac{3\pi}{2})</m>, etc.,
+              there can be a different arbitrary constant on each of these intervals.
+              Thus, there are infinitely many such constants.
+            </p>
+
+            <p>
+              The Fundamental Theorem of Calculus requires as a hypothesis that the function being integrated is continuous on the interval.
+              Thus, we cannot use it to evaluate <m>\int_{0}^{\pi}\tan(x)\,dx</m> since <m>\tan(x)</m> is not continuous on <m>[0,\pi]</m>
+              (it is undefined at <m>x=\frac{\pi}{2}</m>).
             </p>
           </li>
         </ol>

@@ -160,6 +160,15 @@
       </me>.
     </p>
 
+    <p>
+      In <xref ref="sec-4-4-FTC">Section</xref> we saw that that a general antiderivative always involves at least one arbitrary constant.
+      We also saw that if the domain of the function has <q>holes</q> then each piece of the domain can have a different arbitrary constant,
+      but when writing general antiderivatives we usually simply write <m>+C</m>,
+      with the understanding that the constant can be different on disconnected intervals.
+      Thus for instance we write <m>\int \frac{1}{x^2} \, dx = -\frac{1}{x} + C</m>,
+      even though the general antiderivative of <m>\frac{1}{x^2}</m> has different constants for <m>x\lt 0</m> and <m>x\gt 0</m>.
+    </p>
+
     <p permid="uqw">
       When we find an antiderivative,
       we will often say that we <em>evaluate an indefinite integral</em>.

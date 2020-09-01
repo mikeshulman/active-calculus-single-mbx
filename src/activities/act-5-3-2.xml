@@ -101,7 +101,7 @@
       <ol label="a." permid="dBy">
         <li permid="rFd">
           <p permid="RXa">
-            <m>\int \frac{x^2}{5x^3+1} \, dx = \frac{1}{15} \ln(5x^3 + 1) + C</m>.
+            <m>\int \frac{x^2}{5x^3+1} \, dx = \frac{1}{15} \ln(|5x^3 + 1|) + C</m>.
           </p>
         </li>
 
@@ -130,7 +130,7 @@
             and thus <m>x^2dx=\frac{1}{15}du</m>.
             Applying this substitution,
             integrating, and substituting back,
-            <m>\int \frac{x^2}{5x^3+1} \, dx = \int \frac{\frac{1}{15}du}{u} = \frac{1}{15} \ln(u) + C = \frac{1}{15} \ln(5x^3 + 1) + C</m>.
+            <m>\int \frac{x^2}{5x^3+1} \, dx = \int \frac{\frac{1}{15}du}{u} = \frac{1}{15} \ln(|u|) + C = \frac{1}{15} \ln(|5x^3 + 1|) + C</m>.
           </p>
         </li>
 

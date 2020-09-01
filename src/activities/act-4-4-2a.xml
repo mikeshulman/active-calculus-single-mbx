@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-4-4-2a">
+  <statement>
+    <p>
+      <ol label="a.">
+        <li>
+          <p>
+            Draw graphs of three different antiderivatives of the function <m>g(x) = x^2</m>.
+            How are these graphs related?
+          </p>
+        </li>
+        <li>
+          <p>
+            Draw a graph of the function
+            <me>
+              f(x) =
+              \begin{cases}
+              1, \amp \ \text{if}\ 0 \lt x \lt 1 \\
+              4, \amp \ \text{if}\ 2 \lt x \lt 3.
+              \end{cases}
+            </me>
+            Then draw a graph of an antiderivative of <m>f(x)</m>; call it <m>F(x)</m>.
+            Now draw a graph of another antiderivative of <m>f(x)</m> that is <em>not</em> of the form <m>F(x)+C</m> for any single constant <m>C</m>.
+            Finally, write down a formula for the general antiderivative of <m>f</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Repeat part (b) for the function
+            <me>
+              h(x) =
+              \begin{cases}
+              2, \amp \ \text{if}\ x \neq -1 \\
+              \text{undefined}, \amp \ \text{if}\ x=-1.
+              \end{cases}
+            </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            In <xref ref="act-4-4-2">Activity</xref> you found one antiderivative of <m>k(x) = \frac{1}{x^2}</m>.
+            What is the <em>general</em> antiderivative of <m>k</m>?
+          </p>
+        </li>
+        <li>
+          <p>
+            In <xref ref="act-4-4-2">Activity</xref> you found one antiderivative of <m>r(x) = \frac{1}{x}</m> for <m>x\gt 0</m>.
+            Verify that for <m>x \lt 0</m>, the function <m>\ln(-x)</m> is an antiderivative of <m>r</m>.
+            What is the general antiderivative of <m>r</m>?
+          </p>
+        </li>
+        <li>
+          <p>
+            Why can't we use the Fundamental Theorem of Calculus to compute <m>\int_{-1}^{1} \frac{1}{x^2}\,dx</m>?
+            What <q>answer</q> <em>would</em> we get if we tried to compute this integral with the FTC,
+            using the general antiderivative from part (d)?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <hint>
+    <p>
+      <ol label="a.">
+        <li>
+          <p>
+            What does adding a constant to a function do to its graph?
+          </p>
+        </li>
+        <li>
+          <p>
+            Treat the two pieces separately.
+          </p>
+        </li>
+        <li>
+          <p>
+            There are still two pieces.
+          </p>
+        </li>
+        <li>
+          <p>
+            Notice that there are two pieces!
+          </p>
+        </li>
+        <li>
+          <p>
+            Again there are two pieces, now with two different antiderivative formulas.
+          </p>
+        </li>
+        <li>
+          <p>
+            Look at the hypotheses of the FTC.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </hint>
+  <answer>
+    <p>
+      <ol label="a.">
+        <li>
+          <p>
+            They are each shifted up or down by a constant distance.
+          </p>
+        </li>
+        <li>
+          <p>
+            The two pieces can be shifted up or down by different constants.
+            The general antiderivative is
+            <me>
+              F(x) =
+              \begin{cases}
+              x + C_1, \amp \ \text{if}\ 0 \lt x \lt 1 \\
+              4x + C_2, \amp \ \text{if}\ 2 \lt x \lt 3.
+              \end{cases}
+            </me>
+            for real constants <m>C_1</m> and <m>C_2</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <me>
+              H(x) =
+              \begin{cases}
+              2x + C_1, \amp \ \text{if}\ x \lt -1 \\
+              2x + C_2, \amp \ \text{if}\ x \gt -1.
+              \end{cases}
+            </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            <me>
+              K(x) =
+              \begin{cases}
+              -\frac{1}{x} + C_1, \amp \ \text{if}\ x \lt 0 \\
+              -\frac{1}{x} + C_2, \amp \ \text{if}\ x \gt 0.
+              \end{cases}
+            </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            <me>
+              R(x) =
+              \begin{cases}
+              \ln(-x) + C_1, \amp \ \text{if}\ x \lt 0 \\
+              \ln(x) + C_2, \amp \ \text{if}\ x \gt 0.
+              \end{cases}
+            </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            No; the function is not continuous on <m>[-1,1]</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </answer>
+  <solution>
+    <p>
+      <ol label="a.">
+        <li>
+          <p>
+            They are each shifted up or down by a constant distance.
+          </p>
+        </li>
+        <li>
+          <p>
+            The two pieces can be shifted up or down by different constants, since taking the derivative at a point in one interval will only use values of the function in that interval.
+            The general antiderivative is
+            <me>
+              F(x) =
+              \begin{cases}
+              x + C_1, \amp \ \text{if}\ 0 \lt x \lt 1 \\
+              4x + C_2, \amp \ \text{if}\ 2 \lt x \lt 3.
+              \end{cases}
+            </me>
+            for real constants <m>C_1</m> and <m>C_2</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            There are again two pieces, even though they are only separated by a single missing point.
+            Thus both can be shifted independently, and the general antiderivative is
+            <me>
+              H(x) =
+              \begin{cases}
+              2x + C_1, \amp \ \text{if}\ x \lt -1 \\
+              2x + C_2, \amp \ \text{if}\ x \gt -1.
+              \end{cases}
+            </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            Again there are two pieces, though now separated by an asymptote rather than a hole.
+            Thus both can be shifted independently, and the general antiderivative is
+            <me>
+              K(x) =
+              \begin{cases}
+              -\frac{1}{x} + C_1, \amp \ \text{if}\ x \lt 0 \\
+              -\frac{1}{x} + C_2, \amp \ \text{if}\ x \gt 0.
+              \end{cases}
+            </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            Still two pieces, although the formulas for the antiderivative is now different on the two pieces.
+            The general antiderivative is
+            <me>
+              R(x) =
+              \begin{cases}
+              \ln(-x) + C_1, \amp \ \text{if}\ x \lt 0 \\
+              \ln(x) + C_2, \amp \ \text{if}\ x \gt 0.
+              \end{cases}
+            </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            The FTC requires as one of its hypotheses that the function being integrated be continuous on the entire interval <m>[a,b]</m>.
+            This is not the case here: <m>\frac{1}{x^2}</m> is not continuous at <m>x=0</m>.
+            Thus, the FTC does not apply.
+          </p>
+          <p>
+            Note that if we didn't notice this and tried to apply the FTC with the general antiderivative given in part (d),
+            as our answer we would get <m>C_2 - C_1 - 2</m>: the constants don't cancel.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</activity>
+
