@@ -53,14 +53,14 @@
       <ol label="a." permid="DCA">
         <li permid="jJJ">
           <p permid="Cxh">
-            Use a central difference to estimate the instantaneous rate of change of the temperature of the potato at <m>t= 30</m>.
+            Estimate the instantaneous rate of change of the temperature of the potato at <m>t= 30</m>.
             Include units on your answer.
           </p>
         </li>
 
         <li permid="PQS">
           <p permid="iEq">
-            Use a central difference to estimate the instantaneous rate of change of the temperature of the potato at <m>t= 60</m>.
+            Estimate the instantaneous rate of change of the temperature of the potato at <m>t= 60</m>.
             Include units on your answer.
           </p>
         </li>
@@ -137,7 +137,8 @@
       <ol label="a." permid="roi">
         <li permid="tdv">
           <p permid="LQT">
-            <m>F'(30) \approx = 3.85</m> degrees per minute.
+            <m>F'(30) \approx = 3</m> or <m>4.7</m> degrees per minute, depending on the choice of <m>h=\pm 15</m>.
+            Their average <m>3.85</m> is an even better approximation.
           </p>
         </li>
 
@@ -191,9 +192,19 @@
       <ol label="a." permid="LgZ">
         <li permid="xNo">
           <p permid="QAM">
-            Using the central difference, we find that
+            If we choose <m>h=15</m>, we find that
             <me permid="ZUy">
-              F'(30) \approx \frac{F(45)-F(15)}{45-15} = \frac{296-180.5}{30} = 3.85
+              F'(30) \approx \frac{F(45)-F(30)}{45-30} = \frac{296-251}{15} = 3
+            </me>
+            degrees per minute.
+            If we instead choose <m>h=-15</m>, we find that
+            <me permid="ZUy">
+              F'(30) \approx \frac{F(15)-F(30)}{15-30} = \frac{180.5-251}{-15} = 4.7
+            </me>
+            degrees per minute.
+            In fact, we can obtain an even closer approximation by averaging these two approximations:
+            <me>
+              F'(30) \approx \frac{3+4.7}{2} = 3.85
             </me>
             degrees per minute.
           </p>
@@ -201,9 +212,19 @@
 
         <li permid="dUx">
           <p permid="wHV">
-            Using the central difference, we find that
+            If we choose <m>h=15</m>, we find that
             <me permid="GbH">
-              F'(60) \approx \frac{F(75)-F(45)}{45-15} = \frac{342.8-296}{30} = 1.56
+              F'(60) \approx \frac{F(75)-F(60)}{75-60} = \frac{342.8-324.5}{15} = 1.22
+            </me>
+            degrees per minute.
+            If we instead choose <m>h=-15</m>, we find that
+            <me permid="GbH">
+              F'(60) \approx \frac{F(45)-F(60)}{45-60} = \frac{296-324.5}{-15} = 1.9
+            </me>
+            degrees per minute.
+            We can obtain an even closer approximation by averaging these two approximations:
+            <me>
+              F'(60) \approx \frac{1.22+1.9}{2} = 1.56
             </me>
             degrees per minute.
           </p>

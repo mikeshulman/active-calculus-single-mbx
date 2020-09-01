@@ -400,6 +400,7 @@
               <m>h'(5) \approx 21.2</m>;
               <m>h'(5.5) \approx = 23.9</m>;
               rising most rapidly at <m>t = 5.5</m>.
+              (Other approximations are possible; these are the best ones, obtained by averaging the difference quotients for differences <m>+0.5</m> and <m>-0.5</m>.)
             </p>
           </li>
 

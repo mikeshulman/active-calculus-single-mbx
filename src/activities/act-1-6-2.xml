@@ -21,9 +21,8 @@
       at various points in time is taken and recorded in the following table.
       Time <m>t</m> is measured in minutes.
       In <xref ref="act-1-5-1">Activity</xref>,
-      we computed approximations to <m>F'(30)</m> and <m>F'(60)</m> using central differences.
-      Those values and more are provided in the second table below,
-      along with several others computed in the same way.
+      we computed approximations to <m>F'(30)</m> and <m>F'(60)</m>.
+      The best possible approximations of these values, and others, are provided in the second table below.
     </p>
 
     <sidebyside widths="47% 47%" margins="0%" permid="RrX">
@@ -118,7 +117,7 @@
 
         <li permid="TCJ">
           <p permid="NNx">
-            Use a central difference to estimate the value of <m>F''(30)</m>.
+            Estimate the value of <m>F''(30)</m>.
           </p>
         </li>
 
@@ -191,7 +190,7 @@
 
         <li permid="QId">
           <p permid="KSR">
-            <m> F''(30) \approx -0.119</m>.
+            <m> F''(30) \approx -0.032</m>, <m>-0.145</m>, or <m>-0.119</m>.
           </p>
         </li>
 
@@ -224,10 +223,15 @@
 
         <li permid="pkN">
           <p permid="jvB">
-            Using a central difference,
+            Choosing <m>h=15</m>, we obtain
             <me permid="MIe">
-              F''(30) \approx \frac{F'(45)-F'(15)}{30} = \frac{2.45-6.03}{30} \approx -0.119
-            </me>.
+              F''(30) \approx \frac{F'(45)-F'(30)}{15} = \frac{2.45-3.85}{15} \approx -0.093
+            </me>
+            If we instead choose <m>h=-15</m>, we get
+            <me permid="MIe">
+              F''(30) \approx \frac{F'(15)-F'(30)}{-15} = \frac{6.03-3.85}{-15} \approx -0.145
+            </me>
+            A closer approximation can be obtained by averaging these values, giving <m>F''(30) \approx \frac{-0.093 - 0.145}{2} \approx -0.119</m>.
           </p>
         </li>
 

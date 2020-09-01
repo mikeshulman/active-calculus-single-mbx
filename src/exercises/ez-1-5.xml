@@ -45,7 +45,7 @@
         <ol label="a." permid="uOi">
           <li permid="TqS">
             <p permid="JBH">
-              Use a central difference with
+              Use a difference quotient with
               <m>h = 0.01</m> to estimate the value of <m>F'(10)</m>.
             </p>
           </li>
@@ -82,13 +82,13 @@
           <li permid="rTC">
             <p permid="ier">
               <m>
-              F'(10) \approx -3.33592</m>.
+              F'(10) \approx -3.33508</m>.
             </p>
           </li>
 
           <li permid="YaL">
             <p permid="OlA">
-              The coffee's temperature is decreasing at about <m>3.33592</m> degrees per minute.
+              The coffee's temperature is decreasing at about <m>3.33508</m> degrees per minute.
             </p>
           </li>
 
@@ -111,9 +111,9 @@
         <ol label="a." permid="xIO">
           <li permid="Qwm">
             <p permid="GHb">
-              Using the central difference formula, we find that
+              Using the difference quotient formula, we find that
               <me permid="BBJ">
-                F'(10) \approx \frac{F(10.01) - F(9.99)}{0.02} = \frac{(75 + 110 e^{-0.05\cdot 10.01}) - (75 + 110 e^{-0.05\cdot 9.99})}{0.02} \approx -3.33592
+                F'(10) \approx \frac{F(10.01) - F(10)}{0.01} = \frac{(75 + 110 e^{-0.05\cdot 10.01}) - (75 + 110 e^{-0.05\cdot 10})}{0.01} \approx -3.33508
               </me>.
             </p>
           </li>
@@ -121,9 +121,9 @@
           <li permid="wDv">
             <p permid="mOk">
               Since <m>F</m> is measured in degrees Fahrenheit and <m>t</m> in minutes,
-              we have <m>F'(10) \approx -3.33592</m> degrees F per minute.
+              we have <m>F'(10) \approx -3.33508</m> degrees F per minute.
               This means that at the instant <m>t=10</m>,
-              the temperature of the coffee is decreasing at an instantaneous rate of about <m>3.33592</m> degrees per minute.
+              the temperature of the coffee is decreasing at an instantaneous rate of about <m>3.33508</m> degrees per minute.
               Said differently, in the next minute,
               we'd expect the temperature of the coffee to drop about <m>3.33592</m> degrees.
             </p>
@@ -470,7 +470,7 @@
           <li permid="Rgg">
             <p permid="nye">
               Since <m>40 000</m> and <m>70 0000</m> are equidistant from <m>55 000</m>,
-              we use the central difference quotient to approximate the derivative of <m>h</m> at <m>55 0000</m> to obtain
+              we can average the two difference quotients to get a better approximation of the derivative of <m>h</m> at <m>55 0000</m>, obtaining
               <me permid="NQb">
                 h'(55000) \approx \frac{h(70000) - h(40000)}{70000-40000} = \frac{11100-15500}{30000} = - \frac{4400}{30000} \approx -0.147
               </me>

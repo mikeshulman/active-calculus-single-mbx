@@ -207,7 +207,7 @@
         <ol label="a." permid="ryq">
           <li permid="FBV">
             <p permid="Xka">
-              Use a central difference to estimate <m>F'(60)</m>.
+              Find the best estimate of <m>F'(60)</m>, by averaging two difference quotients.
               Use this estimate as needed in subsequent questions.
             </p>
           </li>
