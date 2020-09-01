@@ -137,8 +137,24 @@
       the sign of the derivative tells us whether the function is increasing or decreasing.
     </p>
 
+    <p>
+      The above description applies whether the value of <m>f(x)</m> is positive or negative.
+      Negative numbers do present an interesting tension between common language and mathematical language.
+      For example, it can be tempting to say that
+      <q><m>-100</m> is bigger than <m>-2</m>.</q>
+      But we must remember that <q>greater than</q>
+      describes how numbers lie on a number line:
+      <m>x \gt y</m> provided that <m>x</m> lies to the right of <m>y</m>.
+      So of course, <m>-100</m> is less than <m>-2</m>.
+      Informally, it might be helpful to say that
+      <q><m>-100</m> is more negative than <m>-2</m>.</q>
+      When a function's values are negative,
+      and those values get more negative as the input increases,
+      the function must be decreasing.
+    </p>
+
     <p oldpermid="Vyr" permid="auM">
-      Let <m>f</m> be a function that is differentiable on an interval <m>(a,b)</m>.
+      Now let <m>f</m> be a function that is differentiable on an interval <m>(a,b)</m>.
       It is possible to show that that if
       <m>f'(x) > 0</m> for every <m>x</m> such that <m>a \lt x \lt b</m>, then
       <m>f</m> is increasing on <m>(a,b)</m>;
@@ -251,38 +267,27 @@
       This function is <em>increasing at a decreasing rate</em>.
     </p>
 
-    <p permid="SDL">
-      Similar options hold for how a function can decrease.
-      Here we must be extra careful with our language,
-      because decreasing functions involve negative slopes.
-      Negative numbers present an interesting tension between common language and mathematical language.
-      For example, it can be tempting to say that
-      <q><m>-100</m> is bigger than <m>-2</m>.</q>
-      But we must remember that <q>greater than</q>
-      describes how numbers lie on a number line:
-      <m>x \gt y</m> provided that <m>x</m> lies to the right of <m>y</m>.
-      So of course, <m>-100</m> is less than <m>-2</m>.
-      Informally, it might be helpful to say that
-      <q><m>-100</m> is more negative than <m>-2</m>.</q>
-      When a function's values are negative,
-      and those values get more negative as the input increases,
-      the function must be decreasing.
-    </p>
-
     <figure xml:id="F-1-6-3optsd" permid="PJf">
       <caption>From left to right, three functions that are all decreasing, but doing so in different ways.</caption>
       <image width="100%" source="images/1_6_3optsd" />
     </figure>
 
     <p permid="yKU">
-      Now consider the three graphs shown in <xref ref="F-1-6-3optsd">Figure</xref>.
+      Similar options hold for how a function can decrease, but the terminology can be confusing.
+      Consider the three graphs shown in <xref ref="F-1-6-3optsd">Figure</xref>, which are all decreasing.
       Clearly the middle graph depicts a function decreasing at a constant rate.
       Now, on the first curve, draw a sequence of tangent lines.
       We see that the slopes of these lines get less and less negative as we move from left to right.
       That means that the values of the first derivative,
-      while all negative, are increasing,
-      and thus we say that the leftmost curve is
-      <em>decreasing at an increasing rate</em>.
+      while all negative, are increasing;
+      thus the rate of change of the function itself is increasing.
+      However, since the rate of <em>decrease</em> is the opposite of the rate of increase,
+      it is most natural to say that the leftmost curve is
+      <em>decreasing at a decreasing rate</em>.
+      For instance, if an object has a velocity function that is negative and getting less negative,
+      it would be falling more and more slowly as time goes on;
+      thus we would naturally say it is <q>falling at a decreasing rate</q>,
+      even though the velocity function is technically an <em>increasing</em> function.
     </p>
 
     <p permid="eSd">
@@ -292,8 +297,16 @@
       but as we move from left to right,
       the slopes get more and more negative.
       Hence the slope of the curve is decreasing,
-      and we say that the function is
-      <em>decreasing at a decreasing rate</em>.
+      and since the rate of decrease is the opposite of the rate of increase,
+      we say that the function is
+      <em>decreasing at an increasing rate</em>.
+    </p>
+
+    <p>
+      However, with this said, the phrases <q>decreasing at a decreasing rate</q> and
+      <q>decreasing at an increasing rate</q> are potentially quite confusing.
+      Thus it may be better to stick to more precise phrases like
+      <q>the rate of change is an increasing function</q>.
     </p>
 
     <p permid="KZm">
