@@ -60,10 +60,7 @@
       we have labeled <m>A = (-3,\sqrt{7})</m> and <m>B = (-3,-\sqrt{7})</m>,
       and these points demonstrate that the circle fails the vertical line test.
       Hence, it is impossible to represent the circle through a single function of the form <m>y = f(x)</m>.
-      But
-      portions of the circle can be represented explicitly as a function of <m>x</m>,
-      such as the highlighted arc that is magnified in the center of <xref ref="F-2-7-Intro">Figure</xref>.
-      Moreover, it is evident that the circle is locally linear,
+      But it is evident that the circle is locally linear,
       so we ought to be able to find a tangent line to the curve at every point.
       Thus, it makes sense to wonder if we can compute
       <m>\frac{dy}{dx}</m> at any point on the circle,
@@ -71,9 +68,11 @@
     </p>
 
     <p permid="RFW">
+      Note that <em>portions</em> of the circle can be represented explicitly as a function of <m>x</m>,
+      such as the highlighted arc that is magnified in the center of <xref ref="F-2-7-Intro">Figure</xref>.
       We say that the equation <m>x^2 + y^2 = 16</m> defines <m>y</m> <em>implicitly</em>
-      as a function of <m>x</m>.
-      The graph of the equation can be broken into pieces where each piece can be defined by an explicit function of <m>x</m>.
+      as a function of <m>x</m>
+      (although this is is a bit misleading since <m>y</m> is not a <em>single</em> function of <m>x</m> at all).
       For the circle,
       we could choose to take the top half as one function of <m>x</m>,
       namely <m>y = \sqrt{16 - x^2}</m> and the bottom half as <m>y = -\sqrt{16 - x^2}</m>.
@@ -87,6 +86,9 @@
       is called a <em>lemniscate</em>
           <idx><h>lemniscate</h></idx>
       and is just one of many fascinating possibilities for implicitly given curves.
+      An implicitly given curve can always be divided into pieces on which <m>y</m> is a function of <m>x</m>
+      (except if it has parts that are straight vertical lines),
+      but unlike in the case of a circle it may not be possible to find a <em>formula</em> for the resulting functions.
     </p>
 
     <p permid="dUo">
@@ -110,7 +112,10 @@
       function of <m>x</m>,
       we think of <m>y</m> as some function whose formula <m>f(x)</m> is unknown,
       but which we can differentiate.
-      Just as <m>y</m> represents an unknown formula,
+      Of course, <m>y</m> is not given by any such function everywhere (since the circle fails the vertical line test),
+      but we have seen that small pieces of it can be, so let us suppose we are considering only one of these pieces
+      (it doesn't matter which one).
+      Then just as <m>y</m> represents an unknown function (which, in the general case, may not even have any formula),
       so too its derivative with respect to <m>x</m>,
       <m>\frac{dy}{dx}</m>, will be
       (at least temporarily)
@@ -165,6 +170,11 @@
       This makes sense because 
       there are two corresponding points on the circle for each value of <m>x</m> between <m>-4</m> and <m>4</m>,
       and the slope of the tangent line is different at each of these points.
+      Recall we assumed when deriving the equation that we were considering only one piece of the circle, on which <m>y</m>
+      can be represented as a function of <m>x</m>, and any such piece can only contain one point with any given value of <m>x</m>;
+      but the formula <m>-\frac{x}{y}</m> that we got doesn't depend on which piece we were looking at, so it actually
+      applies to all points on the circle, and because it contains <m>y</m> as well as <m>x</m> it gives different results
+      for different points with the same value of <m>x</m>.
     </p>
 
     <sidebyside widths="50% 46%" margins="0%" valign="middle" permid="JrD">
