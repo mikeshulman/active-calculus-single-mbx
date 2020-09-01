@@ -29,14 +29,14 @@
         <ol label="a." permid="nRZ">
           <li permid="TZi">
             <p permid="pHm">
-              Determine all points <m>(x,y)</m> at which the tangent line to the curve is horizontal.
+              Find decimal approximations of all points <m>(x,y)</m> at which the tangent line to the curve is horizontal.
               (Use technology appropriately to find the needed zeros of the relevant polynomial function.)
             </p>
           </li>
 
           <li permid="Agr">
             <p permid="VOv">
-              Determine all points <m>(x,y)</m> at which the tangent line is vertical.
+              Find decimal approximations of all points <m>(x,y)</m> at which the tangent line is vertical.
               (Use technology appropriately to find the needed zeros of the relevant polynomial function.)
             </p>
           </li>
