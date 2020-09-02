@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-2-8-3a">
+  <statement>
+    <p>
+      Arrange the following functions in order, such that any function higher on the list dominates any function lower on the list.
+    </p>
+    <p>
+      <ol label="a.">
+        <li><p><m>x</m></p></li>
+        <li><p><m>x^2</m></p></li>
+        <li><p><m>x^3</m></p></li>
+        <li><p><m>\sqrt{x}</m></p></li>
+        <li><p><m>\sqrt[3]{x}</m></p></li>
+        <li><p><m>e^x</m></p></li>
+        <li><p><m>x e^x</m></p></li>
+        <li><p><m>e^{2x}</m></p></li>
+        <li><p><m>e^{e^x}</m></p></li>
+        <li><p><m>\ln(x)</m></p></li>
+        <li><p><m>x\ln(x)</m></p></li>
+        <li><p><m>\ln(\ln(x))</m></p></li>
+      </ol>
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <ul>
+        <li><p><m>e^{e^x}</m></p></li>
+        <li><p><m>e^{2x}</m></p></li>
+        <li><p><m>x e^x</m></p></li>
+        <li><p><m>e^x</m></p></li>
+        <li><p><m>x^3</m></p></li>
+        <li><p><m>x^2</m></p></li>
+        <li><p><m>x\ln(x)</m></p></li>
+        <li><p><m>x</m></p></li>
+        <li><p><m>\sqrt{x}</m></p></li>
+        <li><p><m>\sqrt[3]{x}</m></p></li>
+        <li><p><m>\ln(x)</m></p></li>
+        <li><p><m>\ln(\ln(x))</m></p></li>
+      </ul>
+    </p>
+  </answer>
+  <solution>
+    <p>
+      We show a few representative calculations.
+    </p>
+
+    <p>
+      First we compare <m>\ln(x)</m> to <m>\sqrt{x}</m>.
+      By L'Hôpital's Rule and some simplifying algebra,
+      <me permid="Zvz">
+        \lim_{x \to \infty}\frac{\ln(x)}{\sqrt{x}} = \lim_{x \to \infty}\frac{\frac{1}{x}}{\frac{1}{2x^{1/2}}} = \lim_{x \to \infty}\frac{2x^{1/2}}{x} = \lim_{x \to \infty}\frac{2}{x^{1/2}}
+      </me>.
+      Thus, it follows that
+      <me permid="FCI">
+        \lim_{x \to \infty}\frac{\ln(x)}{\sqrt{x}} = 0
+      </me>,
+      and hence <m>\sqrt{x}</m> dominates <m>\ln(x)</m>.
+    </p>
+
+    <p permid="ESO">
+      Similarly, we can show that <m>\sqrt[3]{x}</m> dominates <m>\ln(x)</m>.
+      By L'Hôpital's Rule and some simplifying algebra,
+      <me permid="lJR">
+        \lim_{x \to \infty}\frac{\ln(x)}{\sqrt[3]{x}} = \lim_{x \to \infty}\frac{\frac{1}{x}}{\frac{1}{3 x^{2/3}}} = \lim_{x \to \infty}\frac{3x^{2/3}}{x}
+      </me>.
+      Since <m>\frac{x^{2/3}}{x} = x^{-1/3}</m>,
+      it follows that
+      <me permid="RRa">
+        \lim_{x \to \infty}\frac{\ln(x)}{\sqrt[3]{x}} = \lim_{x \to \infty} \frac{1}{x^{1/3}} = 0
+      </me>
+    </p>
+
+    <p permid="kZX">
+      Now consider <m>e^x</m> and a polynomial such as <m>x^3</m>.
+      If we consider the limit of their quotient and apply LHR once,
+      we see that
+      <me permid="xYj">
+        \lim_{x \to \infty} \frac{x^3}{e^x} = \lim_{x \to \infty} \frac{3x^2}{e^x}
+      </me>
+      By repeated application of LHR, the numerator
+      (regardless of what polynomial we start with)
+      will eventually be simply a constant
+      (after <m>n</m> applications of LHR),
+      and thus with <m>e^x</m> still in the denominator,
+      the overall limit will be <m>0</m>.
+    </p>
+  </solution>
+</activity>
+

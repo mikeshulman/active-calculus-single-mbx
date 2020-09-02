@@ -220,7 +220,7 @@
     <p permid="DQM">
       We note that <m>x = 0</m> is not in the domain of <m>f</m>,
       so we may naturally wonder what happens as <m>x \to 0</m>.
-      As <m>x \to 0^+</m>, we observe that <m>f(x)</m>
+      As <m>x \to 0^+</m> (which, recall, means that <m>x</m> approaches 0 through positive values only), we observe that <m>f(x)</m>
       <em>increases without bound</em>.
       That is, we can make the value of <m>f(x)</m> as large as we like by taking <m>x</m> closer and closer
       (but not equal)
@@ -247,7 +247,7 @@
       by which we mean that we can make
       <m>\frac{1}{x}</m> as large as we like by taking <m>x</m> sufficiently close
       (but not equal)
-      to 0.
+      to 0 (and greater than it).
       In a similar way, we write
       <me permid="fXW">
         \lim_{x \to \infty} \frac{1}{x} = 0
@@ -261,13 +261,15 @@
       (but not equal)
       to <m>a</m>, and the notation
       <m>\lim_{x \to \infty} f(x) = L</m>  means that we can make <m>f(x)</m> as close to <m>L</m> as we like by taking <m>x</m> sufficiently large.
-      This notation also applies to left- and right-hand limits,
-      and to limits involving <m>-\infty</m>.
+      Similarly, we can consider limits involving <m>-\infty</m>.
       For example, returning to <xref ref="F-2-8-Infty">Figure</xref>
       and <m>f(x) = \frac{1}{x}</m>, we can say that
       <me permid="Mff">
-        \lim_{x \to 0^-} \frac{1}{x} = -\infty \ \ \text{and}  \ \ \lim_{x \to -\infty} \frac{1}{x} = 0
-      </me>.
+        \lim_{x \to 0^-} \frac{1}{x} = -\infty \ \ \text{and}  \ \ \lim_{x \to -\infty} \frac{1}{x} = 0.
+      </me>
+      The first means that we can make <m>\frac{1}{x}</m> as negative as we like (i.e., as far from 0 in the negative direction)
+      by taking <m>x</m> sufficiently close (but not equal) to 0 (and less than it)
+      The second means that we can make <m>\frac{1}{x}</m> as close to 0 as we want by taking <m>x</m> to be sufficiently negative.
     </p>
 
     <p permid="wmn">
@@ -275,7 +277,8 @@
       <me permid="smo">
         \lim_{x \to \infty} f(x) = \infty
       </me>
-      if we can make the value of <m>f(x)</m> as large as we'd like by taking <m>x</m> sufficiently large.
+      if we can make the value of <m>f(x)</m> as large as we'd like by taking <m>x</m> sufficiently large,
+      and similarly if either or both infinities are negative.
       For example,
       <me permid="Ytx">
         \lim_{x \to \infty} x^2 = \infty
@@ -353,24 +356,57 @@
     </p>
 
     <p permid="hdp">
-      Finally, it is straightforward to analyze the behavior of any rational function as <m>x \to \infty</m>.
+      Finally, it is straightforward to find the asymptotes of any rational function.
     </p>
 
     <example permid="WZJ">
       <statement>
         <p permid="xrG">
-          Determine the limit of the function
+          Find the vertical and horizontal asymptotes of the function
           <me permid="kHP">
             q(x) =  \frac{3x^2 - 4x + 5}{7x^2 + 9x - 10}
           </me>
-          as <m>x \to \infty</m>.
+          along with all its infinite limits and limits at infinity.
+        </p>
+
+        <p>
+          We first consider vertical asymptotes: that is, points <m>a</m> such that <m>\lim_{x\to a^\pm} q(x) = \pm \infty </m>.
+          Note that at any point where the denominator is nonzero, the function <m>q</m> is continuous, and thus its limit is finite.
+          Therefore, vertical asymptotes can only occur where the denominator equals zero.
+          Factoring the denominator we get
+          <me>
+            7x^2 + 9x - 10 = (7x-5)(x+2)
+          </me>
+          so the potential asymptotes are <m>x = \frac{5}{7}</m> and <m>x=-2</m>, and thus there are four potentially infinite limits:
+          <me>
+            \lim_{x\to \frac{5}{7}^-} q(x) \ \ 
+            \lim_{x\to \frac{5}{7}^+} q(x) \ \ 
+            \lim_{x\to -2^-} q(x) \ \ 
+            \lim_{x\to -2^+} q(x).
+          </me>
+          Consider, for instance, <m>\lim_{x\to -2^-} q(x)</m>.
+          The numerator <m>3x^2 - 4x + 5</m> is continuous, so as <m>x\to -2</m> it approaches its value 25.
+          Similarly, the other factor <m>7x+5</m> approaches its value -9.
+          And when <m>x</m> is close to -2 but less than it, <m>x+2</m> is close to zero and less than it.
+          Thus, the entire function <m>q(x)</m> is of the form <m>\frac{25}{-9 \cdot e}</m> where <m>e</m> is negative and very close to zero.
+          Dividing by something very close to zero gives something very far from zero,
+          and combining this with the sign rule for multiplication and division we conclude that <m>\lim_{x\to -2^-} q(x) = \infty</m>.
+          Similarly, we find
+          <me>
+            \lim_{x\to \frac{5}{7}^-} q(x) = -\infty \ \ 
+            \lim_{x\to \frac{5}{7}^+} q(x) = \infty \ \ 
+            \lim_{x\to -2^-} q(x) = \infty \ \ 
+            \lim_{x\to -2^+} q(x) = -\infty.
+          </me>
+          These are the <q>infinite limits</q>, showing that <m>q</m> has vertical asymptotes at <m>x=\frac{5}{7}</m> and <m>x=-2</m>.
         </p>
 
         <p permid="dyP">
+          Now consider horizontal asymptotes: that is, the values of <m>\lim_{x\to \pm\infty} q(x)</m>.
           Note that both <m>(3x^2 - 4x + 5) \to \infty</m> as <m>x \to \infty</m> and
           <m>(7x^2 + 9x - 10) \to \infty</m> as <m>x \to \infty</m>.
           Here we say that <m>\lim_{x \to \infty} q(x)</m> has indeterminate form <m>\frac{\infty}{\infty}</m>.
-          We can determine the value of this limit through a standard algebraic approach.
+          But we can determine the value of this limit through a standard algebraic approach.
           Multiplying the numerator and denominator each by <m>\frac{1}{x^2}</m>,
           we find that
           <md permid="QOY">
@@ -379,14 +415,25 @@
           </md>
           since <m>\frac{1}{x^2} \to 0</m> and
           <m>\frac{1}{x} \to 0</m> as <m>x \to \infty</m>.
-          This shows that the rational function <m>q</m> has a horizontal asymptote at <m>y = \frac{3}{7}</m>.
-          A similar approach can be used to determine the limit of any rational function as <m>x \to \infty</m>.
+          The same reasoning applies as <m>x\to -\infty</m>.
+          These are the <q>limits at infinity</q>, showing that <m>q</m> has a horizontal asymptote at <m>y = \frac{3}{7}</m>.
+        </p>
+
+        <p>
+          Similar approaches can be used for any rational function.
         </p>
       </statement>
     </example>
 
+    <xi:include href="./activities/act-2-8-2a.xml" />
+    
+  </subsection>
+  <subsection permid="ywZ">
+    <title>L'Hôpital's Rule for <m>\frac{\infty}{\infty}</m></title>
+
     <p permid="Nky">
-      But how should we handle a limit such as
+      The techniques introduced in the previous section allow us to compute many limits involving <m>\pm\infty</m>, but not all of them.
+      For instance, how should we handle a limit such as
       <me permid="wWh">
         \lim_{x \to \infty} \frac{x^2}{e^x}?
       </me>
@@ -395,8 +442,40 @@
     <p permid="trH">
       Here, both <m>x^2 \to \infty</m> and <m>e^x \to \infty</m>,
       but there is not an obvious algebraic approach that enables us to find the limit's value.
-      Fortunately,
-      it turns out that L'Hôpital's Rule extends to cases involving infinity.
+      Fortunately, with a trick we can again apply L'Hôpital's Rule.
+      The version of L'Hôpital's Rule stated above only applies to the indeterminate form <m>\frac{0}{0}</m>, whereas here we have the indeterminate form <m>\frac{\infty}{\infty}</m>, but we can convert the one into the other as follows:
+      <me>
+        \frac{x^2}{e^x} = \frac{1/e^{x}}{1/x^2}.
+      </me>
+      Now both <m>1/e^{x}</m> and <m>1/x^2</m> approach 0 as <m>x\to\infty</m>, so we can apply L'Hôpital's Rule:
+      <me>
+        \lim_{x\to\infty} \frac{x^2}{e^x}
+        = \lim_{x\to\infty} \frac{1/e^{x}}{1/x^2}
+        = \lim_{x\to\infty} \frac{-1/e^{x}}{-2/x^3}
+        = \lim_{x\to\infty} \frac{x^2}{e^x} \cdot \frac{x}{2}.
+      </me>
+      In other words, the limit of <m>\frac{x^2}{e^x}</m> is equal to the limit of <em>itself</em> multiplied by <m>\frac{x}{2}</m>.
+      But <m>\frac{x}{2} \to \infty</m> as <m>x\to \infty</m>, so the only way that multiplying by this quantity can leave the limit of <m>\frac{x^2}{e^x}</m> unchanged is if the latter equals zero:
+      <me>
+        \lim_{x\to\infty} \frac{x^2}{e^x} = 0.
+      </me>
+    </p>
+
+    <p>
+      A similar trick works for an arbitrary quotient.
+      Suppose <m>f(x)\to \infty</m> and <m>g(x)\to\infty</m> as <m>x\to a</m>, and write
+      <me>
+        \lim_{x\to a} \frac{f(x)}{g(x)}
+        = \lim_{x\to a} \frac{1/g(x)}{1/f(x)}
+        = \lim_{x\to a} \frac{-g'(x)/[g(x)]^2}{-f'(x)/[f(x)]^2}
+        = \lim_{x\to a} \left(\frac{f(x)}{g(x)}\right)^2 \cdot \frac{g'(x)}{f'(x)}.
+      </me>
+      If we assume that all the limits involve exist and are nonzero, we can write this as
+      <me>
+        \lim_{x\to a} \frac{f(x)}{g(x)} = \left(\lim_{x\to a} \frac{f(x)}{g(x)}\right)^2 \cdot \lim_{x\to a} \frac{g'(x)}{f'(x)}
+      </me>
+      and some algebra and cancellation yields the following formula.
+      (If one or the other limit is not known to exist or equals zero, a more complicated argument is required, but the result is still valid.)
     </p>
 
     <assemblage permid="qSA">
@@ -404,9 +483,9 @@
       <idx><h>L'Hôpital's rule (at infinity)</h></idx>
 
       <p permid="ZyQ">
-        If <m>f</m> and <m>g</m> are differentiable and both approach zero or both approach <m>\pm \infty</m> as <m>x \to a</m>
-        (where <m>a</m> is allowed to be <m>\infty</m>)
-        , then
+        If <m>f</m> and <m>g</m> are differentiable on an open interval containing <m>a</m>,
+        and either both approach zero or both approach <m>\pm \infty</m> as <m>x \to a</m>
+        (where <m>a</m> is allowed to be <m>\infty</m>), then
         <me permid="ddq">
           \lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}
         </me>,
@@ -417,13 +496,13 @@
     <p permid="FFZ">
       (To be technically correct,
       we need to add the additional hypothesis that
-      <m>g'(x) \ne 0</m> on an open interval that contains <m>a</m> or in every neighborhood of infinity if <m>a</m> is <m>\infty</m>;
-      this is almost always met in practice.)
+      <m>g'(x) \ne 0</m> on an open interval that contains <m>a</m>;
+      this is almost always met in practice.
+      If <m>a=\infty</m>, then by <q>an open interval containing <m>a</m></q> we mean an interval of the form <m>(b,\infty)</m>.)
     </p>
 
     <p permid="lNi">
-      To evaluate <m>\lim_{x \to \infty} \frac{x^2}{e^x}</m>,
-      we can apply L'Hôpital's Rule,
+      Now we can evaluate <m>\lim_{x \to \infty} \frac{x^2}{e^x}</m> more simply using L'Hôpital's Rule,
       since both <m>x^2 \to \infty</m> and <m>e^x \to \infty</m>.
       Doing so, it follows that
       <me permid="Jkz">
@@ -444,7 +523,7 @@
       Now, since <m>2</m> is constant and
       <m>e^x \to \infty</m> as <m>x \to \infty</m>,
       it follows that <m>\frac{2}{e^x} \to 0</m> as <m>x \to \infty</m>,
-      which shows that
+      so we again get the same answer
       <me permid="VyR">
         \lim_{x \to \infty} \frac{x^2}{e^x} = 0
       </me>.
@@ -472,6 +551,8 @@
       so <m>f(x) = 3x^2 - 4x + 5</m> and
       <m>g(x) = 7x^2 + 9x - 10</m> grow at the same rate.
     </p>
+
+    <xi:include href="./activities/act-2-8-3a.xml" />
   </subsection>
 
   <subsection permid="eEi">

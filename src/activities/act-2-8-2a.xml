@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-2-8-2a">
+  <statement>
+    <p>
+      For each of the following functions, find all its vertical and horizontal asymptotes,
+      along with all its infinite limits and limits at infinity.
+    </p>
+
+    <p>
+      <ol label="a.">
+        <li>
+          <p>
+            <m>f(x) = \frac{2(x-2)(x+1)}{(x+4)(x-5)}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>g(x) = \frac{(x-3)(x+4)}{x(x+1)(x-3)}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>h(x) = \frac{x^2-9}{9x-9}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>k(x) = \frac{x^2-9}{9x+27}</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <hint>
+  </hint>
+  <answer>
+    <p>
+      <ol label="a.">
+        <li>
+          <p>
+            Vertical asymptotes at <m>x=-4,5</m>, horizontal asymptote at <m>y=2</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Vertical asymptote at <m>x=-1,0</m>, horizontal asymptote at <m>y=0</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Vertical asymptote at <m>x=1</m>, no horizontal asymptote (<m>\lim_{x\to\pm\infty} h(x) = \pm\infty</m>).
+          </p>
+        </li>
+        <li>
+          <p>
+            No vertical or horizontal asymptotes.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </answer>
+  <solution>
+  </solution>
+</activity>
+
