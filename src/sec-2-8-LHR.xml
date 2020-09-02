@@ -140,15 +140,15 @@
     <p permid="aEj">
       In practice,
       we typically work with a slightly more general version of L'Hôpital's Rule,
-      which states that (under the identical assumptions as the boxed rule above and the extra assumption that <m>g'</m> is continuous at <m>x=a</m>)
+      which states that, if <m>f</m> and <m>g</m> are differentiable on an open interval containing <m>x=a</m>,
+      <m>f(a) = g(a) = 0</m>, and <m>g'</m> is continuous at <m>x=a</m>, then
       <me permid="bod">
         \lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}
       </me>,
       provided the righthand limit exists.
-      This form reflects the basic idea of L'Hôpital's Rule:
-      if <m>\frac{f(x)}{g(x)}</m> produces an indeterminate limit of form <m>\frac{0}{0}</m> as <m>x \to a</m>,
-      that limit is equivalent to the limit of the quotient of the two functions' derivatives,
-      <m>\frac{f'(x)}{g'(x)}</m>.
+      In particular, this version allows us to apply L'Hôpital's Rule more than once:
+      if it turns out that <m>f'(a) = g'(a) = 0</m> as well,
+      we can proceed to <m>\lim_{x \to a} \frac{f''(x)}{g''(x)}</m>, and so on.
     </p>
 
     <p permid="GLs">
