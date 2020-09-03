@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-3-1-0" permid="pte">
+  <statement>
+    <p>Let <m>f(x) = x^{7/3} - 7x^{1/3}</m>.</p>
+    
+    <p>
+      <ol label="a.">
+        <li>
+          <p>
+            Find all the critical numbers of <m>f</m>.
+            (Hint: after finding the derivative, factor out <m>x^{-2/3}</m>.)
+          </p>
+        </li>
+        <li>
+          <p>
+            For each critical number <m>x=a</m>, evaluate a decimal approximation of <m>f'(x)</m> at a number very close to <m>a</m> but less than it,
+            and at a number very close to <m>a</m> but greater than it.
+            Use this to determine whether <m>f</m> has a local maximum, local minimum, or neither at that critical number.
+          </p>
+        </li>
+        <li>
+          <p>
+            Suppose <m>g</m> is an arbitrary function that is defined and differentiable except at a finite number of points.
+            At what kinds of points can the sign of its derivative <m>g'</m> change?
+          </p>
+        </li>
+        <li>
+          <p>
+            How could you have used your answer to part (c) to reduce the number of points you had to evaluate <m>f'(x)</m> at in part (b)?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <hint>
+  </hint>
+  <answer>
+    <p>
+      <ol label="a.">
+        <li>
+          <p>
+            <m>x = -1, 0, 1</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            Relative maximum at <m>x=-1</m>, relative minimum at <m>x=1</m>, and neither at <m>x=0</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            At points where <m>g'</m> is zero or undefined.
+            That is, at the critical numbers and at points where <m>g</m> is undefined.
+          </p>
+        </li>
+        <li>
+          <p>
+            We only needed to evaluate <m>g'</m> at one point in between -1 and 0, and at one point in between 0 and 1.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </answer>
+  <solution>
+  </solution>
+</activity>
+

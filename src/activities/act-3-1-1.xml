@@ -15,8 +15,9 @@
 <activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-3-1-1" permid="pte">
   <statement>
     <p permid="QQu">
-      Suppose that <m>g(x)</m> is a function continuous for every value of <m>x \ne 2</m> whose first derivative is <m>g'(x) = \frac{(x+4)(x-1)^2}{x-2}</m>.
-      Further, assume that it is known that <m>g</m> has a vertical asymptote at <m>x = 2</m>.
+      Suppose that <m>g(x)</m> is a function continuous for every value of <m>x \ne 2</m> but that is not defined at <m>x=2</m>.
+      Assume we know that the derivative of <m>g</m> is
+      <me>g'(x) = \frac{(x+4)(x-1)^2}{x-2}</me>.
 
       <ol label="a." permid="GMO">
         <li permid="mTX">
@@ -31,13 +32,6 @@
             decide whether <m>g</m> has as a local maximum,
             local minimum,
             or neither at each critical number.
-          </p>
-        </li>
-
-        <li permid="zip">
-          <p permid="RVN">
-            Does <m>g</m> have a global maximum? global minimum?
-            Justify your claims.
           </p>
         </li>
 
@@ -71,12 +65,6 @@
           </p>
         </li>
 
-        <li permid="DSi">
-          <p permid="WFG">
-            Use your first derivative sign chart from (b).
-          </p>
-        </li>
-
         <li permid="jZr">
           <p permid="CMP">
             Try expanding the numerator before evaluating the limit.
@@ -103,16 +91,6 @@
         <li permid="cuS">
           <p permid="viq">
             <m>g</m> has a local maximum at <m>x = -4</m> and neither a max nor min at <m>x = 1</m>.
-          </p>
-        </li>
-
-        <li permid="ICb">
-          <p permid="bpz">
-            <m>g</m> does not have a global minimum;
-            it is unclear
-            (at this point in our work)
-            if <m>g</m> increases without bound,
-            so we can't say for certain whether or not <m>g</m> has a global maximum.
           </p>
         </li>
 
@@ -165,17 +143,6 @@
             although <m>g</m> changes from decreasing to increasing at <m>x = 2</m>,
             this is due to a vertical asymptote,
             and <m>g</m> does not have a minimum there.)
-          </p>
-        </li>
-
-        <li permid="NlU">
-          <p permid="fZs">
-            Because <m>g</m> is decreasing as <m>x \to 2^-</m>
-            (where <m>g</m> has a vertical asymptote),
-            <m>g</m> does not have a global minimum.
-            For <m>x \gt 2</m>, <m>g</m> is always increasing,
-            which suggests that <m>g</m> does not have a global maximum
-            (though we do not know for sure that <m>g</m> increases without bound).
           </p>
         </li>
 

@@ -195,6 +195,17 @@
       </p>
     </assemblage>
 
+    <xi:include href="./activities/act-3-1-0.xml" />
+
+    <p>
+      This suggests a general method for finding all the relative maxima and minima of a function.
+      Since the first derivative can only change sign at places where it is zero or undefined
+      (including points where the function itself is undefined),
+      if we divide up the number line at these points, the sign of the derivative must be the same throughout each of the resulting intervals.
+      Thus, it suffices to evaluate it at one point in each such interval.
+      This is called a <em>first derivative sign chart</em>.
+    </p>
+
     <example xml:id="Ex-f-from-f-prime" permid="KZM">
       <statement>
         <p permid="IPa">
@@ -202,8 +213,7 @@
           Determine all critical numbers of <m>f</m> and decide whether a relative maximum,
           relative minimum, or neither occurs at each.
         </p>
-      </statement>
-      <solution permid="bXX">
+
         <p permid="WiL">
           Since we already have <m>f'(x)</m> written in factored form,
           it is straightforward to find the critical numbers of <m>f</m>.
@@ -220,13 +230,10 @@
 
         <p permid="CpU">
           Next, to apply the first derivative test,
-          we'd like to know the sign of <m>f'(x)</m> at inputs near the critical numbers.
-          Because the critical numbers are the only locations at which <m>f'</m> can change sign,
-          it follows that the sign of the derivative is the same on each of the intervals created by the critical numbers:
-          for instance,
-          the sign of <m>f'</m> must be the same for every <m>x \lt -1</m>.
-          We create a first derivative sign chart to summarize the sign of <m>f'</m> on the relevant intervals,
+          we create a first derivative sign chart to summarize the sign of <m>f'</m> on each relevant intervals,
           along with the corresponding behavior of <m>f</m>.
+          Since this function <m>f</m> is defined everywhere, its derivative can only change sign at the critical numbers,
+          so they are the only points at which we divide up the number line.
         </p>
 
         <figure xml:id="F-3-1-signchart" permid="uLv">
@@ -265,7 +272,7 @@
           since <m>f</m> is increasing both before and after <m>x = -1</m>,
           <m>f</m> has neither a minimum nor a maximum at <m>x = -1</m>.
         </p>
-      </solution>
+      </statement>
     </example>
 
     <xi:include href="./activities/act-3-1-1.xml" />
